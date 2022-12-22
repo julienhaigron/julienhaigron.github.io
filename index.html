@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Julien Haigron & Bootstrap contributors">
+    <meta name="generator" content="Honsou1">
+    <title>Julien Haigron - Portfolio</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/modals/">
+
+
+<!-- Style -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .banner {
+      	display: flex;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 100%;
+      }
+
+      .bannerContainer {
+  		position: relative;
+  		text-align: center;
+  		color: white;
+	  }
+
+    </style>
+    
+  </head>
+  <body>
+
+
+<!-- Header -->
+ <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">My name is Julien haigron and I'm a 5th year universary student in Game Programming at Rubika and this is my protfolio. <br> You will find here my most recent video game projects. Feel free to contact me if you have any question! </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <p class="text-muted"><a href="https://www.linkedin.com/in/julien-haigron-256253230/">LinkedIn</a></p>
+            <p class="text-muted">julien.haigronstmalo@gmail.com</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <h4 class="text-white">About & Contact</h4>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Banner -->
+  <section>
+    <div>
+      <div class="bannerContainer">
+      	<img class="banner" src="assets/projects/Banner.png">
+      </div>      
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="py-5 text-center container">
+  	<div class="row py-lg-5">
+      	<div class="col-lg-6 col-md-8 mx-auto">
+      	  <p class="lead card-text"><b>Hello and welcome to my portfolio. You will find here a list of the most recent projects I worked on. Enjoy!</b></p>
+      	</div>
+      </div>
+  </section>
+
+<!-- Projects -->
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+      	<!-- P1 -->
+        <div class="col">
+          <div class="card shadow-sm">
+          	<img src="assets/projects/Seance/Seance_BG.png">
+            
+            <div class="card-body">
+              <p class="card-text">Seance is an online multiplayer video game, in which the three players will incarnate themselves in the middle of a card game.
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projectInfoPopup1">View</button>
+                </div>
+                <small class="text-muted">2 months and still running</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      	<!-- P2 -->
+        <div class="col">
+          <div class="card shadow-sm">
+          	<img src="assets/projects/NSFW/thumbnail.png">
+
+            <div class="card-body">
+              <p class="card-text">Not Safe Fireworks is a two players coop twin-stick shooter in which players shoot and bounce fireworks to beat yokai (Japanese mythological monsters). </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projectInfoPopup2">View</button>
+                </div>
+                <small class="text-muted">1 week</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      	<!-- P3 -->
+        <div class="col">
+          <div class="card shadow-sm">
+          	<img src="assets/projects/NFT/thumbnail.png">
+
+            <div class="card-body">
+              <p class="card-text">Need for tuning is a racing car endless runner community video game. Players compete for the best track record on a level full of obstacles.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projectInfoPopup3">View</button>
+                </div>
+                <small class="text-muted">2 weeks</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      	<!-- P4 -->
+        <div class="col">
+          <div class="card shadow-sm">
+          	<img src="assets/projects/SIU/hub.png">
+
+            <div class="card-body">
+              <p class="card-text">Smash It Up is a party game in which a group of 2 to 4 friends compete to be the first in a series of mini games. <br> Win crowns and smash your competitors in order to end up first!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#projectInfoPopup4">View</button>
+                </div>
+                <small class="text-muted">1 semester</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- project info popup -->
+
+  <!-- P1 -->
+  <div class="modal fade bd-example-modal-lg" id="projectInfoPopup1" tabindex="-1" aria-labelledby="projectInfoPopupLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="projectInfoPopupLabel1">Seance</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <img class="banner" src="assets/projects/Seance/seance2.png">
+
+          <p class="card-text"><br><b>Description:</b></p>
+          <p class="lead card-text">Seance is an <b>online multiplayer</b> video game, in which the three players will incarnate themselves in the middle of a card game. <br>They will outsmart challenges from the game master. The true nature of the game is revealed when a powerful demon, who's haunting the game, starts possessing the game master. <br>Players are then allowed to cheat in order to face those obstacles. <br>Watch out not getting caught.. You may regret it quickly those actions.</p>
+          
+          <p class="card-text"><b>My Contribution:</b></p>
+          <p class="lead card-text">As the only game programmer for this project, my job was to: <br> - Define the architecure with the game designers <br> - Develop the core systems (client & server side) <br> - Create tools designed for Game Designers in order to add data quickly</p>
+
+          <img class="banner" src="assets/projects/Seance/tool.gif">
+          <p class="card-text"><b><br>Sneak peek:</b></p>
+          <p class="lead card-text">Here is a level editor designed to create rooms with a set of "tiles". You can also set their rotation <br>Here's what the result looks like in editor:</p>
+          <img class="banner" src="assets/projects/Seance/toolResult.png">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- P2 -->
+  <div class="modal fade bd-example-modal-lg" id="projectInfoPopup2" tabindex="-1" aria-labelledby="projectInfoPopupLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="projectInfoPopupLabel2">Not Safe Fireworks</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <img class="banner" src="assets/projects/NSFW/gameplay1.png">
+
+          <p class="card-text"><br><b>Description:</b></p>
+          <p class="lead card-text">Not Safe Fireworks is a two players coop twin-stick shooter in which players shoot and bounce fireworks to beat yokai (Japanese mythological monsters).</p>
+          <img class="banner" src="assets/projects/NSFW/gameplay2.png">
+          
+          <p class="card-text"><br><b>My Contribution:</b></p>
+          <p class="lead card-text">As the only game programmer for this project, my job was to: <br> - Define the architecure with the game designers <br> - Develop the controller, gameplay features and firework behavior</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- P3 -->
+  <div class="modal fade bd-example-modal-lg" id="projectInfoPopup3" tabindex="-1" aria-labelledby="projectInfoPopupLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="projectInfoPopupLabel3">Need For Tuning</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <img class="banner" src="assets/projects/NFT/thumbnail.png">
+
+          <p class="card-text"><br><b>Description:</b></p>
+          <p class="lead card-text">Need for tuning is a racing car endless runner community video game. <br>In this game, players compete for the best track record on a level full of obstacles. Players need to combine reflexes and select the right car elements in order to beat the competition.</p>
+          <img class="banner" src="assets/projects/NFT/carSelection.png">
+          
+          <p class="card-text"><br><b>My Contribution:</b></p>
+          <p class="lead card-text">As the only game programmer for this project, my job was to: <br> - Define the architecure with the game designers <br> - Develop the core system, controller and game features <br> - Create a level editor so game designers can create several levels easily</p>
+
+          <img class="banner" src="assets/projects/NFT/gameplay.png">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- P4 -->
+  <div class="modal fade bd-example-modal-lg" id="projectInfoPopup4" tabindex="-1" aria-labelledby="projectInfoPopupLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="projectInfoPopupLabel4">Smash It Up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <img class="banner" src="assets/projects/SIU/hub.png">
+
+          <p class="card-text"><br><b>Description:</b></p>
+          <p class="lead card-text">Smash It Up is a party game in which a group of 2 to 4 friends compete to be the first in a series of mini games. <br> Win crowns and smash your competitors in order to end up first!</p>
+          <img class="banner" src="assets/projects/SIU/gameplay.png">
+          
+          <p class="card-text"><br><b>My Contribution:</b></p>
+          <p class="lead card-text">As the only game programmer for this project, my job was to: <br> - Define the architecure with the game designers <br> - Develop the core system, controller and game features <br> - Create a debug mode so game designers can try specific mini games and part of the game quickly</p>
+
+          <img class="banner" src="assets/projects/SIU/score.png">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+<!-- Footer -->
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-0">Any question? <a href="https://www.linkedin.com/in/julien-haigron-256253230/">Feel free to contact me!</a></p>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
